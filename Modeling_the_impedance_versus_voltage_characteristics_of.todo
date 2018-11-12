@@ -1,0 +1,18 @@
+1 Introduction
+    问题：
+        成本，安全，寿命，低温性能
+    功率性能依赖于SOC，两极电压太高或太低不适用，因为阻抗太大
+    用一个模型来拟合一个电压区间的阻抗数据
+    1 交换电流密度
+        Li-Sn
+    2 双电层电容
+    3 正极锂离子扩散系数
+2 Experimental procedure
+    讲了一通实验设置，主要是电池
+3 Results
+    
+4 Model description, fitting, and discussion
+    Model description
+    Model fitting and discussion of parameters
+5 Summary and conclusions
+References
