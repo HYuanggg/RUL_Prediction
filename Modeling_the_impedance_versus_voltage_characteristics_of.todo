@@ -10,9 +10,17 @@
 2 Experimental procedure
     讲了一通实验设置，主要是电池
 3 Results
-    
+    Fig. 1 （？）在几个电压点，Li受到的阻力怎么小了？
+    Fig. 2 高频截距都一样
+    两段弧
+    中频弧宽度，Rw是什么？随电压先降后升
+    fmin什么意义？界面电化学反应过程，扩散过程
+    电压大到一定程度，越大，fmin越小
 4 Model description, fitting, and discussion
-    Model description
-    Model fitting and discussion of parameters
+    4.1 Model description
+        氧化物活性材料和SEI的详细理论[2,17-19]
+        建立模型后对模型进行了简化，确定了一些参数
+    4.2 Model fitting and discussion of parameters
+        
 5 Summary and conclusions
 References
