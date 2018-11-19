@@ -1,14 +1,36 @@
-正极是阻抗增大的主要原因
+    正极是阻抗增大的主要原因
 
-four accelerating factors：
-    SOC，delta_SOC，hybrid pulse cycle and temperature
-end-of-life condition由一定时间能提供一定功率确定
+    four accelerating factors：
+        SOC，delta_SOC，hybrid pulse cycle and temperature
 
-一个老化模型，基于观察建立
+    end-of-life condition由一定时间能提供一定功率确定
+
+    一个老化模型，基于观察建立
 
 Experimental
-    
+    又是一大堆
+
 Modeling and Optimization
+    three-electrode impedance model
+        ☐ Part Ⅰ 进行了建模，也许要看看这篇文章
+        Fig. 3 方法，有全局优化的有点
+    optimization routine
+        遗传算法
+    parameter extraction
+        与SOC无关的参数：
+            多孔电极曲折因子
+            导体相单位体积面积 导体相双电层电容
+            活性材料双电层电容
+            活性材料和导体相间的局部接触电阻
+            正极集流体和导体相间的电阻
+            正极集流体和电解液间的双电层电容
+            正极集流体氧化层和电解液间的电阻
+
+        与SOC有关的参数
+            正极材料交换电流密度
+            关于固相锂离子浓度的均衡电势微分
+            固相扩散系数
+
 Results
 Impedance Model and Optimization Results
 Discussion
