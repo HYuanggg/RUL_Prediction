@@ -1,2 +1,26 @@
 1 Introduction
+    大多SOC估计方法需要一个OCV-SOC关系，包括：
+        look-up table；
+        ☐ 解析表达式，利于分析，计算效率高（不用插值）；
+        磷酸铁锂曲线太平；
+    文献【12】总结了OCV拟合模型：
+        ☐ 缺点？不够原理；
+    ICA（Incremantal Capacity Analysis):
+        dQ/dV，有峰值，容量不同，峰值高度不同
+        比传统方法更灵敏
+        信号能放大
+    DVA（Differential Voltage Analysis):
+        dV/dQ
+    使用ICA，DVA：
+        难点，信噪比不够大，即使滤波了【7】；
+        解决办法，建一个能解释物理现象的模型【5，20】；
 2 A new open-circuit-voltage model
+    2.1 Open-circuit-voltage parametric model
+    2.2 Model comparison and analysis
+3 State-of-charge estimation based on extended Kalman filter
+4 State-of-health monitoring based on incremental capacity analysis
+    4.1 Incremental capacity analysis at different aging stages
+    4.2 Incremental capacity analysis at diffenent temperature
+5 Other signatures on the IC curve and their correlation with capacity fading
+6 Parametric analysis and model simplification
+7 Conclusions
