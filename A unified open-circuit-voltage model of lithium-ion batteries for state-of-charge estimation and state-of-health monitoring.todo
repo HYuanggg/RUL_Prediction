@@ -1,3 +1,7 @@
+亮点
+    在模型参数化时考虑了嵌锂时的锂离子staging现象
+    在不同老化阶段捕捉到了电池电化学性质
+    建立了模型参数和电池性能衰减的关系
 1 Introduction
     大多SOC估计方法需要一个OCV-SOC关系，包括：
         look-up table；
@@ -5,7 +9,7 @@
         磷酸铁锂曲线太平；
     文献【12】总结了OCV拟合模型：
         ☐ 缺点？不够原理；
-    ICA（Incremantal Capacity Analysis):
+    ICA（Incremental Capacity Analysis):
         dQ/dV，有峰值，容量不同，峰值高度不同
         比传统方法更灵敏
         信号能放大
@@ -14,13 +18,56 @@
     使用ICA，DVA：
         难点，信噪比不够大，即使滤波了【7】；
         解决办法，建一个能解释物理现象的模型【5，20】；
+    数据：
+        A123 APR18650，LiFePO4,18个月【7,28】
 2 A new open-circuit-voltage model
+    OCV扁平区间：
+            源于锂离子的staging现象；
+    容量：
+        定义为截止电压间的电量；
     2.1 Open-circuit-voltage parametric model
+        OCV：
+            3平台，用sigmoid函数表示；
+            2转变；
+        模型（公式1）:
+            OCV(z;K0~5,α1~4，β1,2)；
+            能表征电化学特点【1】，是其简化；
     2.2 Model comparison and analysis
+        ☐ staging到底是什么？
 3 State-of-charge estimation based on extended Kalman filter
+    数据：
+        实验设置【28】；
+    OCV-SOC模型参数：
+        Table3；
+    结果：
+        5%;
 4 State-of-health monitoring based on incremental capacity analysis
+    ICA：
+        虽然是平衡状态的，但不平衡也可以用【7】；
     4.1 Incremental capacity analysis at different aging stages
+        越老化(1000~2300），peak越低；
     4.2 Incremental capacity analysis at diffenent temperature
+        温度下降(10~35℃），peak降低
+        温度和老化：
+            温度差异，peak1，peak2
+            老化差异，peak2
+        温度高的数据更可靠；
 5 Other signatures on the IC curve and their correlation with capacity fading
+    峰值位置：
+        表示了嵌入、脱嵌过程的相位变化，与容量损失有关；
+        老化过程中，峰值位置左移；
+        确定方法：
+            ☐ SOC值，需要从0开始？
+            与peak1的（SOC）距离，从0.4左右开始就行，但更易受噪声和模型误差影响；
+        不如峰值方法强健；
 6 Parametric analysis and model simplification
+    缺点：参数多，模型非线性；
+    分析G(z)=dOCV(z)/dz：
+        f2,f4在高SOC区域衰减到0，所以可以忽略；
+        最终只需要对不同老化更新参数K1，β1，K3就够了，其它维持常量；
+    简化后：
+        变成随着老化右移了；
+        老化程度（峰值）可用线性关系q(α1,3，K1；Θ0~3)预测，Θ0~3用最小二乘拟合；
+        好像不错；
 7 Conclusions
+    在本中，我们提出了一个新的OCV参数模型。它的参数考虑了锂离子电池在嵌锂和脱嵌过程中的staging效应，因此有更高的拟合精度。这个模型结合EKF，以FUDS循环数据，对SOC进行了估计，效果很好。这个模型也可以应用于基于ICA的SOH监测。通过比较IC曲线，发现这个模型能反映不同温度和老化条件下的电化学特性。更进一步，通过参数分析，我们简化了模型，得到了一个可以表示模型参数和老化之间关系的函数，这个函数可以仅通过模型参数就能监测电池SOH和估计容量衰退。未来的研究会集中在开发出更有效的算法来确定OCV模型参数。
