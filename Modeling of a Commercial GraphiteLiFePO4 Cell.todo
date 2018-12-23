@@ -1,0 +1,36 @@
+2011
+    LiFePO4比三元电池重量和体积能量密度都低，但是跟稳定、安全、便宜【2-5】
+    正极的两相：富锂、稀锂【8-17】
+    ☐ path dependence？ charge, discharge?
+    建立了一个模型，2.3Ah，两个温度（25℃，45℃），不对称性，path dependance
+
+Experimental
+    电池：
+        2.3Ah，22650
+    额定容量测试：
+        仪器：multipotentiostat
+        温度：25℃，45℃
+        充放电倍率：C/10~3C
+        截止电压：2~3.6V
+        温度记录：T-type thermocouple
+    充放电过程：
+        初始SOC-充/放电倍率-SOC？-静置（静置时间）-充/放电倍率
+    PITT --> 电池均衡：
+        ☐ 阶跃电压，观察电流：阶跃电压如何实现？
+    又是一堆材料操作
+
+Model development
+    LFP的模型：【19】
+    石墨的模型：单粒子模型【21】
+    Butler-Volmer方程
+
+Results and Discussion
+    path-dependance 特点：【19】
+    Fig.2：path-denpendance
+
+    Model parameters for LFP and graphite half cells at 25 and 45℃：
+
+    LFP 电极：
+        25~45℃，接触电阻变小
+
+    石墨电极：

@@ -32,6 +32,7 @@
         模型（公式1）:
             OCV(z;K0~5,α1~4，β1,2)；
             能表征电化学特点【1】，是其简化；
+            用Fig.2的数据（10%~90%SOC）进行参数辨识；
     2.2 Model comparison and analysis
         ☐ staging到底是什么？
 3 State-of-charge estimation based on extended Kalman filter
