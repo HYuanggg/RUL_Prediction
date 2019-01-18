@@ -1,5 +1,5 @@
 2011
-    LiFePO4比三元电池重量和体积能量密度都低，但是跟稳定、安全、便宜【2-5】
+    LiFePO4比三元电池重量和体积能量密度都低，但是更稳定、安全、便宜【2-5】
     正极的两相：富锂、稀锂【8-17】
     ☐ path dependence？ charge, discharge?
     建立了一个模型，2.3Ah，两个温度（25℃，45℃），不对称性，path-dependence
@@ -54,7 +54,7 @@ Results and Discussion
     C26650 LFP电极的电阻特点：
         接触电阻值进行修正
         path-dependence对于没有平坦电压阶段的relaxation force的材料会更明显
-        石墨的嵌锂/脱锂反映了相变，相变是几个电压平台产生的原因【32】
+        ✔ 石墨的嵌锂/脱锂反映了相变，相变是几个电压平台产生的原因【32】 @done (19-01-12 19:55) 没看懂，没收获
         颗粒尺寸分布也会造成path-dependence
 
     C26650仿真，45deg C：

@@ -1,0 +1,101 @@
+2005
+
+1. Introduction
+
+2. Aging of carbonaceous anodes
+    2.1. General aspects
+        【1-3】
+        ☐ 石墨放电平台【10-12】
+            ☐ 【11】是一本书 Handbook of Battery Materials 383-418
+            ☐ 【12】也是一本书 Lithium Batteries: Science and Technology
+        可能的改变（因或果）：
+            电极表面处，电解液表面处，电解液中
+            活性材料中
+            复合电极中（集流体，活性材料，导电添加物，粘合剂，孔，等）
+        阳极老化主因：
+            电极/电解液界面变化【13-15】
+
+    2.2. Changes at the electrode/electrolyte interface
+        大家都知道锂离子电池阳极工作的电压在电解液成分的电化学稳定窗口外
+        SEI【16】
+            防止电解液被还原
+            防止充电电极被腐蚀
+            Li+传输系数并非1
+            其余物质也不是不传输
+            性质依赖于电解液成分
+            SEI热行为【37-39】，导致SEI膜变得不易于（离子、分子）穿透
+            低温，Li金属沉积【63-67】
+            阴阳极之间，过渡金属溶解
+
+    2.3. Changes of the active material
+        微小
+        嵌锂/脱锂的石墨体积变化只有10%以内
+
+    2.4. Changes of the composite eletrode
+        contact loss
+        eletrode porosity
+        internal cell pressure[73]
+        binder maerials
+        current collector corrosion
+        corrosion products-->poor electronic conductivity-->inhomogeneous current-->lithium plting
+
+    2.5. Conclusion on anode aging
+        Table 1:
+            causes, effects, measures
+
+3. Aging of lithium metal oxide cathodes
+    3.1. General aspects
+        主要LiMn2O4和Li(Ni,Co)O2
+        【1-3，8，78】
+        changes:
+            活性材料的老化；
+            电极成分的衰退；
+            电解液成分的老化及表面膜的形成；
+            老化产物和负极的反应；
+        正极容量衰退原因：
+            循环时的结构变化；
+            化学分解/溶解反应；
+            表面膜变化；
+
+    3.2. Lithium nickel cobalt oxides
+        3.2.1. Structural aspects
+            Ni，+Co，+Al/Mg，有助于提高寿命
+
+        3.2.2. Surface effects
+            Fig. 3.
+
+    3.3. Lithium manganese spinel
+        低SOC的变化；
+        高SOC的变化；
+
+        3.3.1. Structural aspects
+            ☐ 电势平台和结构变化的关系【127-131】、【132-134】
+            改善容量滞后：
+                用Co，Cr，Al和Mg代替Mn离子
+                用多余的Li代替Mn
+            优化的锂锰尖晶石，结构变化不再是老化主因
+
+        3.3.2. Dissolution of manganese in the eletrolyte
+            锂锰尖晶石在电解液中的溶解：
+                低电势的猛分解
+                被HF催化的酸分解
+
+            3.3.2.1. Manganese dissolution at low potentials(manganese disproportionation)
+                2Mn(III) --> Mn(IV) + Mn(II)(solv)
+                深放电易诱发
+                
+            3.3.2.2. Manganese dissolution at elevated potentials(acid dissolution)
+
+4. Identification of aging processes using eletrochemical impedance spectroscopy
+    Fig. 6.：
+        高频段，与电池的结构和plates的多孔性有关
+        低频段，不同电化学过程的反应
+            各反应时间常数相近
+            通过半电池研究
+                一对容性半圆
+                一个尖峰
+    阴极的衰退更严重
+
+5. Summary
+    电池老化，阻抗增大，功率下降，容量减小，与复杂繁多的机理有关。材料 参数，存储和循环条件，对电池寿命和性能都有影响。依赖于电池化学特性，高的低的SOC都可能有损电池性能，减小电池寿命。高温时，衰退会加剧，但低温时，特别是充电的时候，也会有坏的影响。在所有材料参数中，表面的化学过程对阴阳极材料都有很大作用。在阴极上，相变和基体材料的结构改变都对老化有很大影响，然而阳极的基体材料变化却只有微小影响。
+    许多电池衰退和老化的机理都可以使用阻抗谱非破坏性地进行监视和研究。虽然对阻抗数据的解释有时很难，也不清楚，阻抗谱和传统的电池科学，电化学及其它方法，都是研究锂离子电池老化过程的有效工具。

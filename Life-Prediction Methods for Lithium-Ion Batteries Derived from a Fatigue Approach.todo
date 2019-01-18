@@ -1,0 +1,56 @@
+191
+2010
+（电极的厚度、电极板面积、@孔隙率、最大锂离子浓度以及@化学计量比有关）
+
+Abstract
+    单源老化：SEI膜增长
+    ☐ 虚拟（dummy）数据？
+    Palmgren-Miner(PM) rule（机械老化）
+    a complex current profile in a second paper
+
+锂离子电池老化源：
+    界面膜的形成，
+    结构衰退，
+    正极材料分解，
+    电极和集流体的接触不良；【2，3】
+两种主要的老化模型：
+    基于物理的模型【4-8】
+    经验模型【9-12】
+数据来源：
+    虚拟锂离子电池（物理模型）
+
+Physics-Based Simulator Featuring a Dummy Battery
+	模型描述
+        SEI膜 on 石墨【4，7，8，15】
+            消耗Li，电解液分子
+            SEI膜部分分解-->开放SEI结构-->长时间小规模电解液分解【16】
+            机制（溶液分子扩散和副反应动力学）【4】
+        Single-particle（SP）模型【18】
+        方程就、简化及解
+    变量外推
+        ？？？
+
+Mechanical-Fatigue Approach to the Aging of Li-Ion Batteries
+    机械系统寿命预测通用步骤（1~4）
+    S-N（循环次数（被破坏前）与加载压力的曲线）难用，因为是常值负载，需要加入假设————PM rule
+    循环计数方法改变：
+        Level crossing cycle counting
+        Rain flow cycle counting
+    锂离子电池EOL：
+        常用20%loss【11，20】
+Assessment of the Predictability of Damage-Accumulation Relationships by a Dummy Li-Ion Battery
+    负载因子：
+
+
+Conclusion
+    本文评价了利用机械疲劳寿命预测方法估计锂离子电池寿命的可能性。为了达到这个目的，建立了一个基于物理的LiCoO2/石墨模型，只考虑单一老化因素，即动力学受限的阳极材料上的SEI膜生长。
+    参数敏感性研究揭示了SOC和C倍率对寿命有很大影响；因此，将它们作为负载因子。电流脉冲的形状产生的影响很小。
+    虚拟电池在一个基本不变的SOC值下经历虚拟的电流微循环实验。容量损失通过寿命实验过程中的多次容量检查进行监视。
+    包含两种微循环的虚拟老化数据被用来估计容量衰退，使用的方法是PM rule或者时间积累损失的关系。预测结果与虚拟老化实验的结果进行比较。结果表明PM rule的预测精度要更高。
+    容量检查的频率（用来估计电池放电容量和调整SOC）被发现会轻微影响容量损失。这在使用另一个电流配置的虚拟老化数据时会带来一个很小的误差。
+    在这个分析中，预测方法被应用在基于同一平均SOC的微循环组合配置上，虚拟数据实验作为验证标准。在Part Ⅱ中，会使用更复杂的电流配置，SOC会有很大变化，不会包含简单的微循环（或者微循环组合）。为达此目的，会提出配置分解方法。
+
+
+————
+————模拟机械疲劳的方法，用简单工况推复杂工况
+————
